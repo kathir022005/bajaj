@@ -190,5 +190,5 @@ app.post('/bfhl', (req, res) => {
 
 app.get('/', (_, res) => res.send('BFHL API is running'));
 
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT);
